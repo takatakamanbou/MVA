@@ -11,20 +11,20 @@ $$
 X = USV^{\top}
 $$
 
-と分解できます．ただし，&mathjax{\textrm{rank}(X) = r \leq \textrm{min}(m, n)}; として，
+と分解できます．ただし，$\textrm{rank}(X) = r \leq \textrm{min}(m, n)$ として，
 
-- &mathjax{U}; は &mathjax{m\times r}; 列直交行列（各列のベクトルが直交し大きさが1）
-- &mathjax{V}; は &mathjax{n\times r}; 列直交行列
-- &mathjax{S}; は &mathjax{r\times r}; 対角行列で，その対角要素 &mathjax{\sigma_1, \sigma_2, \ldots, \sigma_r}; は全て正
+- $U$ は $m\times r$ 列直交行列（各列のベクトルが直交し大きさが1）
+- $V$ は $n\times r$ 列直交行列
+- $S$ は $r\times r$ 対角行列で，その対角要素 $\sigma_1, \sigma_2, \ldots, \sigma_r$ は全て正
 
-です．&mathjax{\sigma_1, \sigma_2, \ldots, \sigma_r}; を &mathjax{X}; の特異値といい，この行列分解を特異値分解といいます．
+です．$\sigma_1, \sigma_2, \ldots, \sigma_r$ を $X$ の特異値といい，この行列分解を特異値分解といいます．
 
-このとき，&mathjax{X^{\rm T}X}; を &mathjax{V}; と &mathjax{S}; を用いて表しなさい．
+このとき，$X^{\rm T}X$ を $V$ と $S$ を用いて表しなさい．
 
 Step1 ができたらいったん takataka に見せてください．Step2 につながるお話をします．
 
-*** Step2 [#s88f8bd1]
+## Step2
 
-Step1 が（高橋の説明も含めて）分かると，データを表す &mathjax{N\times D}; 行列 &mathjax{X}; が与えられたとき（平均は &mathjax{\mathbf{0}}; とします），
-&mathjax{X}; の分散共分散行列 &mathjax{\frac{1}{N}X^{\rm T}X}; を計算してからその固有値固有ベクトルを求める必要はなく，&mathjax{X}; を特異値分解した結果からそれらが求まることが分かります．
-ex05notebookB の適当な箇所にセルを追加して，Vの固有値固有ベクトルをXの特異値分解（np.linalg.svd 使いましょう）を用いて計算して表示するコードを書きなさい．
+Step1 が（高橋の説明も含めて）分かると，データを表す $N\times D$ 行列 $X$ が与えられたとき（平均は $\mathbf{0}$ とします），
+$X$ の分散共分散行列 $\frac{1}{N}X^{\rm T}X$ を計算してからその固有値固有ベクトルを求める必要はなく，$X$ を特異値分解した結果からそれらが求まることが分かります．
+ex05notebookB の適当な箇所にセルを追加して，Vの固有値固有ベクトルをXの特異値分解（`np.linalg.svd` 使いましょう）を用いて計算して表示するコードを書きなさい．
