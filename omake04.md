@@ -11,13 +11,13 @@ $$
 X = USV^{\top}
 $$
 
-と分解できます．ただし，$\textrm{rank}(X) = r \leq \textrm{min}(m, n)$ として，
+と分解できます．ただし， $\textrm{rank}(X) = r \leq \textrm{min}(m, n)$ として，
 
 - $U$ は $m\times r$ 列直交行列（各列のベクトルが直交し大きさが1）
 - $V$ は $n\times r$ 列直交行列
 - $S$ は $r\times r$ 対角行列で，その対角要素 $\sigma_1, \sigma_2, \ldots, \sigma_r$ は全て正
 
-です．$\sigma_1, \sigma_2, \ldots, \sigma_r$ を $X$ の特異値といい，この行列分解を特異値分解といいます．
+です． $\sigma_1, \sigma_2, \ldots, \sigma_r$ を $X$ の特異値といい，この行列分解を特異値分解といいます．
 
 このとき，$X^{\rm T}X$ を $V$ と $S$ を用いて表しなさい．
 
